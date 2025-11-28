@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+    background: url("img/pokemon-chromebook-wallpaper.jpg") no-repeat center center fixed;
+
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 4px solid transparent;
+    border-radius: 0 0 10px 10px;
+
+    animation: linhaRainbow 20s linear infinite;
+}
+
+@keyframes linhaRainbow {
+    0%   { border-bottom-color: #ff0000; }
+    20%  { border-bottom-color: #ffa500; }
+    40%  { border-bottom-color: #ffff00; }
+    60%  { border-bottom-color: #00ff00; }
+    80%  { border-bottom-color: #0000ff; }
+    100% { border-bottom-color: #8a2be2; }
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.pokemon-banner {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pokemon-banner h2 {
+    margin-top: 20px;
+    font-size: 2.6rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        2px 2px 0px #000000,
+        4px 4px 8px rgba(0,0,0,0.4);
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.links-container ul {
+    list-style: none;
+    width: 500px;
+}
+
+.links-container li {
+    margin: 25px 0;
+}
+
+.links-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+    padding: 0 20px;
+
+    background-color: #a7d4ff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.links-container a:hover {
+    background-color: #477bff;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+    border-radius: 10px 10px 0 0;
+}
