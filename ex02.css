@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    gap: 16px;
+height: 140px;
+}
+
+.item-1 {
+    flex-basis: 100px;
+}
+
+.item-2 {
+    flex-basis: 100px;
+}
+
+.item-3 {
+    flex-basis: 100px;
+}
+.img4{
+    height: 140px;
+}
+.img5{
+    height: 140px;
+}
+.img6{
+    height: 140px;
+}
